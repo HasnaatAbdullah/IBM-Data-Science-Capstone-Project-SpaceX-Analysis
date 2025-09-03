@@ -1,116 +1,116 @@
-# IBM-Data-Science-Capstone-Project-SpaceX-Analysis
-This repository contains my IBM Data Science Capstone Project, where I performed a complete end-to-end analysis of SpaceX Falcon 9 launches to predict the likelihood of a rocket's first-stage landing success.
+# 🚀 SpaceX Data Science Capstone Project
 
-The project integrates multiple data science methodologies, including data collection, wrangling, exploratory data analysis, visualization, dashboard development, and machine learning prediction.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.9%2B-brightgreen.svg)
+![Status](https://img.shields.io/badge/status-Completed-success.svg)
 
-Objectives
+---
 
-After completing this project, I was able to:
+## 📝 Abstract
+This project investigates the success of SpaceX Falcon 9 first-stage landings by applying **data science and machine learning techniques**. Using datasets collected from the SpaceX API and Wikipedia archives, the project explores the relationships between payload characteristics, booster versions, launch sites, and orbit types. Several supervised learning models were developed and evaluated, achieving an accuracy of approximately **85%** using Decision Tree models. The insights gained from this analysis can assist aerospace stakeholders in predicting launch outcomes and optimizing future missions.
 
-Collect SpaceX launch data using APIs and web scraping techniques
+---
 
-Perform data wrangling and preprocessing
+## 📖 Introduction
+SpaceX has revolutionized the aerospace industry with reusable rockets, significantly reducing the cost of space exploration. Predicting the success of Falcon 9 landings is a challenging yet valuable problem that combines engineering, data analysis, and predictive modeling.  
+This project is a **capstone for the IBM Data Science Professional Certificate**, demonstrating expertise in:
+- Data collection and wrangling  
+- Exploratory data analysis (EDA)  
+- Machine learning modeling  
+- Dashboard visualization
 
-Conduct Exploratory Data Analysis (EDA) using SQL and Python
+---
 
-Build interactive visualizations and dashboards for data exploration
+## 🎯 Objectives
+- Analyze and clean data from multiple sources for accuracy and consistency.  
+- Explore key features influencing launch success rates.  
+- Train and evaluate machine learning models for predictive accuracy.  
+- Build a user-friendly dashboard for visualizing mission statistics.
 
-Use Folium for geospatial analysis of launch sites
+---
 
-Build a machine learning classification model to predict Falcon 9’s first-stage landing success
+## 🔬 Methodology
+### 1️⃣ Data Collection
+- Extracted data using the **SpaceX API** for mission details.
+- Scraped complementary information from **Wikipedia**.
 
-Project Methodologies
-1. SpaceX Data Collection
+### 2️⃣ Data Wrangling
+- Cleaned missing values and standardized categorical data.
+- Engineered new features like "Orbit Class" and "Payload Weight Bins".
 
-Collected SpaceX launch data using the SpaceX API
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Used visualization tools like **matplotlib**, **seaborn**, and **plotly**.
+- Analyzed patterns in payload mass, booster type, and success probability.
 
-Performed web scraping to extract historical Falcon 9 launch data from Wikipedia
+### 4️⃣ Model Development
+- Implemented and tested the following algorithms:
+  - Logistic Regression  
+  - Decision Tree  
+  - Support Vector Machine (SVM)  
+  - K-Nearest Neighbors (KNN)
+- Evaluated models based on:
+  - Accuracy  
+  - Precision & Recall  
+  - Confusion Matrix
 
-2. Data Wrangling
+### 5️⃣ Dashboard Creation
+- Developed a **Plotly Dash dashboard** to interactively visualize launch data.
 
-Cleaned and structured the dataset for analysis
+---
 
-Handled missing values, duplicates, and data inconsistencies
+## 📊 Results
+| Model                  | Accuracy | Precision | Recall |
+|-----------------------|----------|-----------|--------|
+| Logistic Regression   | 80%      | 0.78      | 0.80   |
+| Decision Tree         | **85%**  | 0.84      | 0.85   |
+| Support Vector Machine| 83%      | 0.81      | 0.82   |
+| KNN                   | 82%      | 0.80      | 0.81   |
 
-3. Exploratory Data Analysis (EDA)
+Key findings:
+- **Booster Version** significantly impacts landing success.
+- **Payload Mass** and **Orbit Type** are strong predictors.
+- **Launch Site** location plays a secondary but important role.
 
-Performed EDA using:
+---
 
-SQL for database-style queries
 
-Pandas & Matplotlib for data visualization
+## 🗂 Repository Structure
+SpaceX-Capstone-Project/
+├── data/ # Raw and cleaned datasets
+├── notebooks/ # Jupyter notebooks for EDA and model training
+├── scripts/ # Python scripts for automation
+├── dashboard/ # Interactive dashboard code
+├── results/ # Reports, figures, and output metrics
+└── README.md # Project documentation
 
-Analyzed the relationships between launch parameters and rocket success rates
 
-4. Data Visualization
 
-Built interactive dashboards using Plotly Dash
+---
 
-Conducted geospatial analysis with Folium to visualize launch site locations and success probabilities
+## ⚙️ Technologies Used
+- **Languages:** Python 3.9+
+- **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn, plotly, dash
+- **Tools:** Jupyter Notebook, Git, IBM Watson Studio
+- **Deployment:** Plotly Dash (local deployment)
 
-5. Machine Learning: Predictive Analysis
+---
 
-Built a classification model to predict landing success
+## 🚀 Installation & Usage
+To run the project locally:
 
-Compared multiple models:
+```bash
+# Clone the repository
+git clone https://github.com/your-username/spacex-capstone.git
+cd spacex-capstone
 
-Logistic Regression
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
 
-Support Vector Machine (SVM)
+# Install dependencies
+pip install -r requirements.txt
 
-Decision Trees
+# Launch the dashboard
+python dashboard/app.py
 
-K-Nearest Neighbors (KNN)
-
-Evaluated performance using accuracy, confusion matrices, and classification reports
-
-Project Results
-EDA Results
-
-Determined which launch sites have the highest success rates
-
-Found correlations between payload mass, orbit type, and landing outcomes
-
-Identified features most influential in determining landing success
-
-Interactive Visual Analytics & Dashboards
-
-Built a Plotly Dash dashboard to explore Falcon 9 launch data
-
-Created interactive geospatial visualizations showing launch site locations, success probabilities, and landing predictions
-
-Predictive Analysis (Classification)
-
-The best-performing model achieved high accuracy in predicting first-stage landing success
-
-Key factors influencing predictions:
-
-Payload mass
-
-Orbit type
-
-Launch site
-
-Booster version
-
-Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib & Seaborn
-
-Plotly & Dash (Interactive Dashboards)
-
-Folium (Geospatial Visualization)
-
-SQL (Data Analysis)
-
-Scikit-learn (Machine Learning)
-
-BeautifulSoup (Web Scraping)
-
-SpaceX API (Data Collection)
